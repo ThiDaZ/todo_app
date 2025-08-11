@@ -15,6 +15,7 @@ const MinimalCard = React.forwardRef<
     )}
     {...props}
   >
+    
     {children}
   </div>
 ))

@@ -6,15 +6,9 @@ import MinimalCard, {
 import { NeumorphEyebrow } from "@/components/ui/neumorph-eyebrow";
 import {
 	Calendar,
-	CheckCircle2,
 } from "lucide-react";
 
-import {DynaPuff, Jua } from "next/font/google";
-
-const dynaPuff = DynaPuff({
-  variable: "--font-dyna-puff",
-  subsets: ["latin"],
-});
+import {Jua} from "next/font/google";
 
 const jua = Jua({
   variable: "--font-jua",
@@ -55,7 +49,7 @@ export default function TodoCard({
 						<MinimalCardTitle className={`text-center text-xl text-zinc-800 ${jua.className}`}>
 							{title}
 						</MinimalCardTitle>
-						 <NeumorphEyebrow
+						 {/* <NeumorphEyebrow
 							intent="muted"
 							className="gap-1.5 mx-auto mt-1.5"
 						>
@@ -64,7 +58,7 @@ export default function TodoCard({
 								aria-hidden="true"
 							/>
 							3/5
-						</NeumorphEyebrow>
+						</NeumorphEyebrow> */}
 					</div>
 
 				</div>

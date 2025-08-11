@@ -1,4 +1,5 @@
 "use client";
+import AddTodoCard from "@/components/add-todo-card";
 import Navbar from "@/components/navbar";
 import TodoCard from "@/components/todo-card";
 import { exampleTodos } from "@/lib/example-data";
@@ -10,7 +11,7 @@ export default function Home() {
 	const addCard = () => {
 		setTodos([ 
       ...todos,
-      { icon: "📝", title: "New Todo" },
+      { icon: "😊", title: "New Todo" },
 		]);
 	};
 
@@ -22,15 +23,8 @@ export default function Home() {
 					This is Home
 				</div>
 				<div className="mt-4 grid grid-cols-4 gap-5">
-					<button
-						onClick={addCard}
-						className="bg-gray-200 p-4 rounded shadow text-center"
-					>
-						<h2 className="font-bold">
-							📝
-						</h2>
-						<p>Add</p>
-					</button>
+					<AddTodoCard addCard={addCard} />
+
 					{todos.map((todo, index) => (
 						<TodoCard
 							key={index}

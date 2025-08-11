@@ -1,7 +1,7 @@
 export const exampleTodos = [
-  { icon: "📝", title: "Task 1" },
-  { icon: "📝", title: "Task 2" },
-  { icon: "📝", title: "Task 3" },
-  { icon: "📝", title: "Task 4" },
-  { icon: "📝", title: "Task 5" },
+  { icon: "🛍️", title: "Shopping" },
+  { icon: "☀️", title: "Morning Routine" },
+  { icon: "📝", title: "Work Tasks" },
+  { icon: "🏋️", title: "Gym" },
+  { icon: "🍽️", title: "Dinner" },
 ];
